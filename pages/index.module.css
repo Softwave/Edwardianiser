@@ -59,10 +59,10 @@
 }
 .main input[type="submit"] {
   padding: 12px 0;
-  color: #fff;
+  color: #ffffff;
   background-color: #4D5C85;
   border: none;
-  border-radius: 2px;
+  border-radius: 0px;
   text-align: center;
   cursor: pointer;
 }
@@ -71,3 +71,7 @@
   margin-top: px;
 }
 
+.main a {
+  color: #4D5C85;
+  text-decoration: underline;
+}

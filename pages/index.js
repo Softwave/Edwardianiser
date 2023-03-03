@@ -45,7 +45,11 @@ export default function Home() {
       <Head>
         <title>Edwardianiser</title>
         <link rel="icon" href="/lady.png" />
-        <link rel="stylesheet" href="/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </Head>
 
       <main className={styles.main}>
@@ -63,6 +67,10 @@ export default function Home() {
         </form>
         <div className={styles.result}><br/>Input: {edInput}</div>
         <div className={styles.result}>Output: {result}</div>
+
+        <footer class="page-footer font-small blue pt-4">
+          <div className={styles.result}><br/><br/><a href="https://www.s0ftwave.com/" target="_blank">© Jessica Leyba 2023</a></div>
+        </footer>
       </main>
     </div>
   );
