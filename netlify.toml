@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "build"
+  publish = ".next"
 
 [build.environment]
   NEXT_PUBLIC_OPENAI_API_KEY = "${NEXT_PUBLIC_OPENAI_API_KEY}"
