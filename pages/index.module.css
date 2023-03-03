@@ -65,6 +65,7 @@
   border-radius: 0px;
   text-align: center;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 .main .result {
   font-weight: bold;
