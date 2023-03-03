@@ -29,7 +29,7 @@ export default async function (req, res) {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: generatePrompt(edwardian),
-      temperature: 1.0,
+      temperature: 0.9,
       max_tokens: 100,
     });
     res.status(200).json({ result: completion.data.choices[0].text });
@@ -52,6 +52,6 @@ export default async function (req, res) {
 function generatePrompt(edwardian) {
   const capitalizededwardian =
     edwardian[0].toUpperCase() + edwardian.slice(1).toLowerCase();
-  return `Rewrite the text prompt to sound like it was written in the Edwardian era, or by a character from a Jane Austen novel.
+  return `Rewrite the text prompt to sound like it was written in the Edwardian era of the 1910's.
 ${capitalizededwardian}`;
 }
