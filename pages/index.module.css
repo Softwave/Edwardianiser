@@ -50,7 +50,7 @@
 .main input[type="text"] {
   padding: 12px 16px;
   border: 1px solid #4D5C85;
-  border-radius: 2px;
+  border-radius: 6px;
   margin-bottom: 24px;
   outline-color: #4D5C85;
 }
@@ -63,11 +63,11 @@
   color: #ffffff;
   background-color: #4D5C85;
   border: none;
-  border-radius: 0px;
   text-align: center;
   cursor: pointer;
   -webkit-appearance: none;
   font-weight: bold;
+  border-radius: 6px;
 }
 .main .result {
   font-weight: bold;
@@ -86,4 +86,22 @@
   color: #4D5C85;
   font-weight: bold;
   font-family: sans-serif;
+}
+
+.main button {
+  background: #4D5C85;
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  border: none;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.main button:hover {
+  cursor: pointer;
 }
