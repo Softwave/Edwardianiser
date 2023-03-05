@@ -54,8 +54,14 @@ export default async function (req, res) {
 function generatePrompt(edwardian) {
   const capitalizededwardian =
     edwardian[0].toUpperCase() + edwardian.slice(1).toLowerCase();
-  return `Rewrite the text prompt to sound like it would fit in Downton Abbey or in Pride & Prejudice.
+  return `Rewrite the text prompt to sound like it was written by PG Wodehouse, EM Forster, LM Montgomery or an Edwardian author.
 
-  Possible variations: like Bertie Wooster or a character from EM Forster's A Room with a View or Maurice. The prompt is:
+  A valid rewrite should be grammatically correct and use Edwardian language. NOT early-modern or shakespearian English. It should randomly sound either very posh or more common. 
+
+  It should also randomly seem as if written by a gentleman or a lady.
+
+  Please do NOT include thee's and thou's and other archaic pronouns and words from earlier than the 19th century.
+
+  The prompt is:
 ${capitalizededwardian}`;
 }

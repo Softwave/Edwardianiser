@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import styles from "./index.module.css";
-
+import { Range } from "react-range";
 
 
 export default function Home() {
@@ -59,7 +59,7 @@ export default function Home() {
           <input
             type="text"
             name="edwardian"
-            placeholder="Enter text to make Edwardian"
+            placeholder="Text to render in an Edwardian fashion"
             value={edInput}
             onChange={(e) => setedInput(e.target.value)}
           />
