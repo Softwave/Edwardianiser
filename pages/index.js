@@ -69,7 +69,7 @@ export default function Home() {
         <div className={styles.result}>Output: {result}</div>
 
         <footer class="page-footer font-small blue pt-4">
-          <div className={styles.result}><br/><br/><a href="https://www.s0ftwave.com/" target="_blank">© SOFTWAVE 2023</a></div>
+          <div className={styles.footer}><br/><br/><a href="https://www.s0ftwave.com/" target="_blank">© SOFTWAVE 2023</a></div>
         </footer>
       </main>
     </div>
