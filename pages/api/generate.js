@@ -1,3 +1,5 @@
+// WIP Edwardianiser app
+
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
