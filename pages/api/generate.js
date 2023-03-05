@@ -31,8 +31,8 @@ export default async function (req, res) {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: generatePrompt(edwardian),
-      temperature: 0.5,
-      max_tokens: 100,
+      temperature: 0.3,
+      max_tokens: 50,
     });
     res.status(200).json({ result: completion.data.choices[0].text });
   } catch(error) {
@@ -54,14 +54,7 @@ export default async function (req, res) {
 function generatePrompt(edwardian) {
   const capitalizededwardian =
     edwardian[0].toUpperCase() + edwardian.slice(1).toLowerCase();
-  return `Rewrite the text prompt to sound like it was written by PG Wodehouse, EM Forster, LM Montgomery or an Edwardian author.
-
-  A valid rewrite should be grammatically correct and use Edwardian language. NOT early-modern or shakespearian English. It should randomly sound either very posh or more common. 
-
-  It should also randomly seem as if written by a gentleman or a lady.
-
-  Please do NOT include thee's and thou's and other archaic pronouns and words from earlier than the 19th century.
-
+  return `Rewrite the text prompt to sound like it was written by PG Wodehouse or Evelyn Waugh. 
   The prompt is:
 ${capitalizededwardian}`;
 }
