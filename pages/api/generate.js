@@ -54,7 +54,7 @@ export default async function (req, res) {
 function generatePrompt(edwardian) {
   const capitalizededwardian =
     edwardian[0].toUpperCase() + edwardian.slice(1).toLowerCase();
-  return `Rewrite the text prompt to sound like it was written by PG Wodehouse or Evelyn Waugh or Mark Twain.
+  return `Rewrite the text prompt to sound like it was written by PG Wodehouse or Evelyn Waugh or EM Forster.
   The prompt is:
 ${capitalizededwardian}`;
 }
