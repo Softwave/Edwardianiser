@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Edwardianiser'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C11CC2CFA6EA478B95BD89528E7A57CF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_37C214F6DC6042B89D19B9F90D4200BC }}
           package: .
