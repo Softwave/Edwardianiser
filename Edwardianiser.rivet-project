@@ -41,8 +41,9 @@ data:
           data:
             flatten: true
             joinString: >
-              Rewrite the text prompt to sound like it was written by {{input
-              2}}. The prompt is: {{input}}
+              Rewrite the text prompt to sound decidedly old-fashioned, and
+              Edwardian particularly. Use the writing style of {{input 2}} as
+              inspiration. The prompt is: {{input}} 
             useJoinStringInput: false
           outgoingConnections:
             - output->"Prompt" AhfmCPhMMbafH3TS68Vpm/input
@@ -91,8 +92,9 @@ data:
         '[kIUxqdcw1Tqte70as-Xo-]:graphInput "Graph Input"':
           data:
             dataType: string
-            defaultValue: ""
+            defaultValue: I feel very sick today. Just real icky.
             id: UserInput
+            joinString: ""
             promptText: ""
             text: ""
             useDefaultValueInput: false
