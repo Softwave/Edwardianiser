@@ -1,3 +1,6 @@
+// Edwardianiser
+// A tool for writers who write period fiction
+
 require('dotenv').config();
 
 
