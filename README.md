@@ -7,3 +7,23 @@ The app is accessible [here](https://edwardianiser-f685a3a0a01a.herokuapp.com/).
 ![Image](https://github.com/Softwave/Edwardianiser/blob/main/public/lady.png)
 
 ![Image](https://github.com/Softwave/Edwardianiser/blob/main/public/icon.png)
+
+```
+                                                
+                     ..',,'.                    
+                 ;d0NNNNNNNNNXkl.               
+              'xNNNNNNNNNNNNNNNNNKc             
+             kNNNNNNNNNNNNNNNWWWNNNX;           
+           .O0OOO00KXNNNNNNNNWWWNNNNNo          
+       .;looooooooooodk0XNWNNNNNNNNNNN'         
+     'looooooooooooooooooxOXNNNNNNNNNNK         
+   .loooooooooooooooooooooooxOKNNNNNNNN         
+  ;ooo.    xdoooooooooooooooooodk0XNNNd      .  
+ '         lNX0kdoooooooooooooooooodxko',,;co   
+            lNNNN0xooooooooooooooooooooooooc    
+              NNNNNKkdoooooooooooooooooooc      
+                0NNNNN0kdooooooooooooo:         
+                    KNNNNXK0O'                  
+```
+
+[By Jessica Leyba](http://s0ftwave.com/)
