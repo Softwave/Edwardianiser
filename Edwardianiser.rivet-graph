@@ -1,0 +1,106 @@
+version: 4
+data:
+  metadata:
+    description: ""
+    id: 8IGxIO1lsR0ef8V9_lsis
+    name: Untitled Graph
+  nodes:
+    '[6tG8MTiv5kLdVnMc9xrMP]:pop "Pop"':
+      outgoingConnections:
+        - lastItem->"Join" DKxaaGwJUxJ9Yi8YTklwi/input2
+      visualData: 570.2795054733998/576.3093019274824/200/84
+    '[9o-VMW15f3qxKXKLVstMk]:text "Text"':
+      data:
+        text: "{{input}}"
+      visualData: 1225.4405252573627/410.646419055542/300/25
+    '[AhfmCPhMMbafH3TS68Vpm]:prompt "Prompt"':
+      data:
+        enableFunctionCall: false
+        name: Translate
+        promptText: "{{input}}"
+        type: function
+        useNameInput: false
+        useTypeInput: false
+      outgoingConnections:
+        - output->"Chat" Q_k7CzK-yvwVdxElauyRH/prompt
+      visualData: 625.7312331866226/-174.55087922148584/250/90
+    '[DKxaaGwJUxJ9Yi8YTklwi]:join "Join"':
+      data:
+        flatten: true
+        joinString: >
+          Rewrite the text prompt to sound like it was written by {{input 2}}.
+          The prompt is: {{input}}
+        useJoinStringInput: false
+      outgoingConnections:
+        - output->"Prompt" AhfmCPhMMbafH3TS68Vpm/input
+      visualData: 315.83980310105625/-60.894630243562986/150/92
+    '[Q_k7CzK-yvwVdxElauyRH]:chat "Chat"':
+      data:
+        cache: false
+        enableFunctionUse: false
+        frequencyPenalty: 0
+        maxTokens: 1024
+        model: gpt-4
+        presencePenalty: 0
+        stop: ""
+        temperature: 0.3
+        top_p: 1
+        useAsGraphPartialOutput: true
+        useFrequencyPenaltyInput: false
+        useMaxTokensInput: false
+        useModelInput: false
+        usePresencePenaltyInput: false
+        useStop: false
+        useStopInput: false
+        useTemperatureInput: false
+        useTopP: false
+        useTopPInput: false
+        useUseTopPInput: false
+        useUserInput: false
+      outgoingConnections:
+        - response->"Text" 9o-VMW15f3qxKXKLVstMk/input
+      visualData: 1030.616946344561/123.13397085518254/200/83
+    '[UHSl-8mX6G9DNco45Kz49]:text "Text"':
+      data:
+        text: EM Forster
+      outgoingConnections:
+        - output->"Array" p896m_wGk9zUA99OmhNY0/input2
+      visualData: -41.80017567422408/369.5835521093387/300/79
+    '[Xmmdyk2Po7YSPa1xXjoza]:text "User Input"':
+      data:
+        text: "I feel very sick today. Just real icky. "
+      isSplitRun: true
+      outgoingConnections:
+        - output->"Join" DKxaaGwJUxJ9Yi8YTklwi/input1
+      visualData: -55.4556505229379/-105.78618253445325/300/87
+    '[atVSL47flkDd5o4-G6ZcC]:shuffle "Shuffle"':
+      outgoingConnections:
+        - shuffled->"Pop" 6tG8MTiv5kLdVnMc9xrMP/array
+      visualData: 399.69922536712596/301.960491018438/175/82
+    '[nQw4BYbcaIkccDvFHZsLV]:text "Text"':
+      data:
+        text: |
+          PG Wodehouse
+      outgoingConnections:
+        - output->"Array" p896m_wGk9zUA99OmhNY0/input4
+      visualData: -31.105447365621114/627.4964474378993/300/81
+    '[nTwkR_3RuEg_nvAT8YwTs]:text "Text"':
+      data:
+        text: Evelyn Waugh
+      outgoingConnections:
+        - output->"Array" p896m_wGk9zUA99OmhNY0/input1
+      visualData: -40.71379956267826/239.59078586875887/300/78
+    '[p896m_wGk9zUA99OmhNY0]:array "Array"':
+      data:
+        flatten: true
+        flattenDeep: false
+        promptText: ""
+      outgoingConnections:
+        - output->"Shuffle" atVSL47flkDd5o4-G6ZcC/array
+      visualData: 346.10344076275527/437.39570239888286/200/73
+    '[xvoGycMJMsN5KfM0SIMT9]:text "Text"':
+      data:
+        text: LM Montgomery
+      outgoingConnections:
+        - output->"Array" p896m_wGk9zUA99OmhNY0/input3
+      visualData: -44.85581233382492/488.60918062991624/300/80
