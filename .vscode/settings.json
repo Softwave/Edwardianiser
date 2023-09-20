@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/a6069dee-45f9-4629-9fd6-8cd7cdfe37fe/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Edwardianiser",
+    "appService.deploySubpath": "."
+}
