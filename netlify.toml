@@ -8,7 +8,7 @@
   to = "/.netlify/functions/api/:splat"
 
 [build]
-  command = "echo building functions..."
+  command = "start"
 
 [build.environment]
   NEXT_PUBLIC_OPENAI_API_KEY = "${NEXT_PUBLIC_OPENAI_API_KEY}"
