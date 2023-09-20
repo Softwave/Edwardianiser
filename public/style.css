@@ -44,7 +44,11 @@ h3 {
     line-height: 40px;
     font-weight: 400;
     color: #202123;
-    margin: 16px 0 40px;  
+    margin: 16px 0 0px;  
+}
+
+.description {
+    margin-block-start: 0.1em;
 }
 
 form {
