@@ -1,6 +1,14 @@
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
+
 [build]
-  command = "npm run build"
-  publish = ".next"
+  command = "echo building functions..."
 
 [build.environment]
   NEXT_PUBLIC_OPENAI_API_KEY = "${NEXT_PUBLIC_OPENAI_API_KEY}"
